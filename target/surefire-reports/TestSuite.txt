@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 42.65 s <<< FAILURE! - in TestSuite
+tests.LoginTest.LoginTests[locked_out_user, secret_sauce](2)  Time elapsed: 0.311 s  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...> but was:<...inventory.html>
+	at tests.LoginTest.LoginTests(LoginTest.java:40)
+

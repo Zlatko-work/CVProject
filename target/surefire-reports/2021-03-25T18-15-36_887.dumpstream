@@ -1,0 +1,4 @@
+# Created at 2021-03-25T18:15:37.248
+Boot Manifest-JAR contains absolute paths in classpath 'E:\ProektCVSkripta\CVProekt\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

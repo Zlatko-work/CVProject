@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="24" passed="23">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="40344" started-at="2021-03-26T09:06:08Z" finished-at="2021-03-26T09:06:49Z">
+    <groups>
+    </groups>
+    <test name="Testing dropdowns" duration-ms="8797" started-at="2021-03-26T09:06:08Z" finished-at="2021-03-26T09:06:17Z">
+      <class name="tests.WDUDropdownsTest">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.WDUDropdownsTest@204f30ec]" name="tearUp" is-config="true" duration-ms="3726" started-at="2021-03-26T10:06:08Z" finished-at="2021-03-26T10:06:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="validateDropdown()[pri:1, instance:tests.WDUDropdownsTest@204f30ec]" name="validateDropdown" duration-ms="3624" started-at="2021-03-26T10:06:12Z" finished-at="2021-03-26T10:06:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDropdown -->
+        <test-method status="PASS" signature="validateCheckboxes()[pri:2, instance:tests.WDUDropdownsTest@204f30ec]" name="validateCheckboxes" duration-ms="407" started-at="2021-03-26T10:06:16Z" finished-at="2021-03-26T10:06:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckboxes -->
+        <test-method status="PASS" signature="validateRadioButtons()[pri:3, instance:tests.WDUDropdownsTest@204f30ec]" name="validateRadioButtons" duration-ms="383" started-at="2021-03-26T10:06:16Z" finished-at="2021-03-26T10:06:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRadioButtons -->
+        <test-method status="PASS" signature="validateDisabledButton()[pri:4, instance:tests.WDUDropdownsTest@204f30ec]" name="validateDisabledButton" duration-ms="30" started-at="2021-03-26T10:06:16Z" finished-at="2021-03-26T10:06:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDisabledButton -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.WDUDropdownsTest@204f30ec]" name="tearDown" is-config="true" duration-ms="620" started-at="2021-03-26T10:06:16Z" finished-at="2021-03-26T10:06:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.WDUDropdownsTest -->
+    </test> <!-- Testing dropdowns -->
+    <test name="Testing file upload" duration-ms="9099" started-at="2021-03-26T09:06:08Z" finished-at="2021-03-26T09:06:17Z">
+      <class name="tests.WDUFileUploadTest">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.WDUFileUploadTest@13deb50e]" name="tearUp" is-config="true" duration-ms="5090" started-at="2021-03-26T10:06:08Z" finished-at="2021-03-26T10:06:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="uploadFile()[pri:1, instance:tests.WDUFileUploadTest@13deb50e]" name="uploadFile" duration-ms="3251" started-at="2021-03-26T10:06:13Z" finished-at="2021-03-26T10:06:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadFile -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.WDUFileUploadTest@13deb50e]" name="tearDown" is-config="true" duration-ms="753" started-at="2021-03-26T10:06:17Z" finished-at="2021-03-26T10:06:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.WDUFileUploadTest -->
+    </test> <!-- Testing file upload -->
+    <test name="Validating text in google" duration-ms="5973" started-at="2021-03-26T09:06:17Z" finished-at="2021-03-26T09:06:23Z">
+      <class name="tests.ValidateTextInGoogle">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.ValidateTextInGoogle@ae13544]" name="tearUp" is-config="true" duration-ms="3166" started-at="2021-03-26T10:06:17Z" finished-at="2021-03-26T10:06:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="GoogleSearchResults()[pri:0, instance:tests.ValidateTextInGoogle@ae13544]" name="GoogleSearchResults" duration-ms="2184" started-at="2021-03-26T10:06:20Z" finished-at="2021-03-26T10:06:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleSearchResults -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.ValidateTextInGoogle@ae13544]" name="tearDown" is-config="true" duration-ms="622" started-at="2021-03-26T10:06:23Z" finished-at="2021-03-26T10:06:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ValidateTextInGoogle -->
+    </test> <!-- Validating text in google -->
+    <test name="Testing contact us session" duration-ms="15490" started-at="2021-03-26T09:06:08Z" finished-at="2021-03-26T09:06:24Z">
+      <class name="tests.WDUContactUsTest">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.WDUContactUsTest@42e26948]" name="tearUp" is-config="true" duration-ms="3725" started-at="2021-03-26T10:06:08Z" finished-at="2021-03-26T10:06:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="validateResetButton()[pri:1, instance:tests.WDUContactUsTest@42e26948]" name="validateResetButton" duration-ms="3406" started-at="2021-03-26T10:06:12Z" finished-at="2021-03-26T10:06:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResetButton -->
+        <test-method status="PASS" signature="validateContactUs()[pri:2, instance:tests.WDUContactUsTest@42e26948]" name="validateContactUs" duration-ms="1645" started-at="2021-03-26T10:06:15Z" finished-at="2021-03-26T10:06:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateContactUs -->
+        <test-method status="PASS" signature="invalidContactUs()[pri:3, instance:tests.WDUContactUsTest@42e26948]" name="invalidContactUs" duration-ms="6088" started-at="2021-03-26T10:06:17Z" finished-at="2021-03-26T10:06:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidContactUs -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.WDUContactUsTest@42e26948]" name="tearDown" is-config="true" duration-ms="619" started-at="2021-03-26T10:06:23Z" finished-at="2021-03-26T10:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.WDUContactUsTest -->
+    </test> <!-- Testing contact us session -->
+    <test name="Testing login" duration-ms="17158" started-at="2021-03-26T09:06:08Z" finished-at="2021-03-26T09:06:25Z">
+      <class name="tests.LoginTest">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.LoginTest@6a41eaa2]" name="tearUp" is-config="true" duration-ms="3265" started-at="2021-03-26T10:06:08Z" finished-at="2021-03-26T10:06:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="LoginTests(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@6a41eaa2]" name="LoginTests" duration-ms="285" started-at="2021-03-26T10:06:11Z" data-provider="getData" finished-at="2021-03-26T10:06:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTests -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTest@6a41eaa2]" name="tearDown" is-config="true" duration-ms="76" started-at="2021-03-26T10:06:12Z" finished-at="2021-03-26T10:06:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.LoginTest@6a41eaa2]" name="tearUp" is-config="true" duration-ms="2381" started-at="2021-03-26T10:06:12Z" finished-at="2021-03-26T10:06:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="FAIL" signature="LoginTests(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@6a41eaa2]" name="LoginTests" duration-ms="233" started-at="2021-03-26T10:06:14Z" data-provider="getData" finished-at="2021-03-26T10:06:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<...> but was:<...inventory.html>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<...> but was:<...inventory.html>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at tests.LoginTest.LoginTests(LoginTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTests -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTest@6a41eaa2]" name="tearDown" is-config="true" duration-ms="50" started-at="2021-03-26T10:06:15Z" finished-at="2021-03-26T10:06:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.LoginTest@6a41eaa2]" name="tearUp" is-config="true" duration-ms="2400" started-at="2021-03-26T10:06:15Z" finished-at="2021-03-26T10:06:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="LoginTests(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@6a41eaa2]" name="LoginTests" duration-ms="243" started-at="2021-03-26T10:06:17Z" data-provider="getData" finished-at="2021-03-26T10:06:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTests -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTest@6a41eaa2]" name="tearDown" is-config="true" duration-ms="39" started-at="2021-03-26T10:06:17Z" finished-at="2021-03-26T10:06:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.LoginTest@6a41eaa2]" name="tearUp" is-config="true" duration-ms="2532" started-at="2021-03-26T10:06:18Z" finished-at="2021-03-26T10:06:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="LoginTests(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@6a41eaa2]" name="LoginTests" duration-ms="5288" started-at="2021-03-26T10:06:20Z" data-provider="getData" finished-at="2021-03-26T10:06:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTests -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTest@6a41eaa2]" name="tearDown" is-config="true" duration-ms="51" started-at="2021-03-26T10:06:25Z" finished-at="2021-03-26T10:06:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Testing login -->
+    <test name="Testing autocomplete session" duration-ms="8674" started-at="2021-03-26T09:06:17Z" finished-at="2021-03-26T09:06:26Z">
+      <class name="tests.WDUAutocompleteTest">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.WDUAutocompleteTest@5f341870]" name="tearUp" is-config="true" duration-ms="2472" started-at="2021-03-26T10:06:17Z" finished-at="2021-03-26T10:06:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="validateAutoCompleteTextfield()[pri:1, instance:tests.WDUAutocompleteTest@5f341870]" name="validateAutoCompleteTextfield" duration-ms="5605" started-at="2021-03-26T10:06:20Z" finished-at="2021-03-26T10:06:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAutoCompleteTextfield -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.WDUAutocompleteTest@5f341870]" name="tearDown" is-config="true" duration-ms="597" started-at="2021-03-26T10:06:25Z" finished-at="2021-03-26T10:06:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.WDUAutocompleteTest -->
+    </test> <!-- Testing autocomplete session -->
+    <test name="Testing to do list" duration-ms="18191" started-at="2021-03-26T09:06:08Z" finished-at="2021-03-26T09:06:26Z">
+      <class name="tests.WDUToDoListTest">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.WDUToDoListTest@2b98378d]" name="tearUp" is-config="true" duration-ms="3494" started-at="2021-03-26T10:06:08Z" finished-at="2021-03-26T10:06:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="addItemInToDoList()[pri:1, instance:tests.WDUToDoListTest@2b98378d]" name="addItemInToDoList" duration-ms="3418" started-at="2021-03-26T10:06:12Z" finished-at="2021-03-26T10:06:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemInToDoList -->
+        <test-method status="PASS" signature="deleteItemFromToDoList()[pri:2, instance:tests.WDUToDoListTest@2b98378d]" name="deleteItemFromToDoList" duration-ms="10666" started-at="2021-03-26T10:06:15Z" finished-at="2021-03-26T10:06:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteItemFromToDoList -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.WDUToDoListTest@2b98378d]" name="tearDown" is-config="true" duration-ms="606" started-at="2021-03-26T10:06:26Z" finished-at="2021-03-26T10:06:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.WDUToDoListTest -->
+    </test> <!-- Testing to do list -->
+    <test name="Testing buttons" duration-ms="6693" started-at="2021-03-26T09:06:25Z" finished-at="2021-03-26T09:06:32Z">
+      <class name="tests.WDUButtonsTest">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.WDUButtonsTest@71e9ddb4]" name="tearUp" is-config="true" duration-ms="2430" started-at="2021-03-26T10:06:25Z" finished-at="2021-03-26T10:06:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="validateButtonOne()[pri:1, instance:tests.WDUButtonsTest@71e9ddb4]" name="validateButtonOne" duration-ms="3381" started-at="2021-03-26T10:06:28Z" finished-at="2021-03-26T10:06:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateButtonOne -->
+        <test-method status="PASS" signature="validateButtonTwoUsingJavascriptExecutor()[pri:2, instance:tests.WDUButtonsTest@71e9ddb4]" name="validateButtonTwoUsingJavascriptExecutor" duration-ms="73" started-at="2021-03-26T10:06:31Z" finished-at="2021-03-26T10:06:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateButtonTwoUsingJavascriptExecutor -->
+        <test-method status="PASS" signature="validateButtonThreeUsingMouseAndKeyboard()[pri:3, instance:tests.WDUButtonsTest@71e9ddb4]" name="validateButtonThreeUsingMouseAndKeyboard" duration-ms="194" started-at="2021-03-26T10:06:31Z" finished-at="2021-03-26T10:06:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateButtonThreeUsingMouseAndKeyboard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.WDUButtonsTest@71e9ddb4]" name="tearDown" is-config="true" duration-ms="611" started-at="2021-03-26T10:06:31Z" finished-at="2021-03-26T10:06:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.WDUButtonsTest -->
+    </test> <!-- Testing buttons -->
+    <test name="Testing actions" duration-ms="8746" started-at="2021-03-26T09:06:24Z" finished-at="2021-03-26T09:06:32Z">
+      <class name="tests.WDUActionsTest">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.WDUActionsTest@13b6aecc]" name="tearUp" is-config="true" duration-ms="3959" started-at="2021-03-26T10:06:24Z" finished-at="2021-03-26T10:06:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="verifyDragAndDrop()[pri:1, instance:tests.WDUActionsTest@13b6aecc]" name="verifyDragAndDrop" duration-ms="3466" started-at="2021-03-26T10:06:28Z" finished-at="2021-03-26T10:06:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDragAndDrop -->
+        <test-method status="PASS" signature="verifyDoubleClick()[pri:2, instance:tests.WDUActionsTest@13b6aecc]" name="verifyDoubleClick" duration-ms="160" started-at="2021-03-26T10:06:31Z" finished-at="2021-03-26T10:06:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDoubleClick -->
+        <test-method status="PASS" signature="verifyHoverOver()[pri:3, instance:tests.WDUActionsTest@13b6aecc]" name="verifyHoverOver" duration-ms="555" started-at="2021-03-26T10:06:31Z" finished-at="2021-03-26T10:06:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHoverOver -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.WDUActionsTest@13b6aecc]" name="tearDown" is-config="true" duration-ms="601" started-at="2021-03-26T10:06:32Z" finished-at="2021-03-26T10:06:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.WDUActionsTest -->
+    </test> <!-- Testing actions -->
+    <test name="Testing IFrame" duration-ms="21700" started-at="2021-03-26T09:06:23Z" finished-at="2021-03-26T09:06:45Z">
+      <class name="tests.WDUIframeTest">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.WDUIframeTest@63475ace]" name="tearUp" is-config="true" duration-ms="4374" started-at="2021-03-26T10:06:23Z" finished-at="2021-03-26T10:06:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="handleIframe()[pri:1, instance:tests.WDUIframeTest@63475ace]" name="handleIframe" duration-ms="16689" started-at="2021-03-26T10:06:28Z" finished-at="2021-03-26T10:06:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleIframe -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.WDUIframeTest@63475ace]" name="tearDown" is-config="true" duration-ms="635" started-at="2021-03-26T10:06:44Z" finished-at="2021-03-26T10:06:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.WDUIframeTest -->
+    </test> <!-- Testing IFrame -->
+    <test name="Testing dates" duration-ms="22858" started-at="2021-03-26T09:06:26Z" finished-at="2021-03-26T09:06:49Z">
+      <class name="tests.WDUDatePickerTest">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:tests.WDUDatePickerTest@1190200a]" name="tearUp" is-config="true" duration-ms="2432" started-at="2021-03-26T10:06:26Z" finished-at="2021-03-26T10:06:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="chooseDate()[pri:1, instance:tests.WDUDatePickerTest@1190200a]" name="chooseDate" duration-ms="19811" started-at="2021-03-26T10:06:28Z" finished-at="2021-03-26T10:06:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseDate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.WDUDatePickerTest@1190200a]" name="tearDown" is-config="true" duration-ms="615" started-at="2021-03-26T10:06:48Z" finished-at="2021-03-26T10:06:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.WDUDatePickerTest -->
+    </test> <!-- Testing dates -->
+  </suite> <!-- Suite -->
+</testng-results>
