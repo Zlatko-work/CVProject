@@ -8,9 +8,9 @@
     <classes>
       <class name="tests.LoginTest">
         <methods>
-          <include name="tearUp"/>
+          <include name="quitDriver"/>
+          <include name="initialize"/>
           <include name="LoginTests" invocation-numbers="1"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- tests.LoginTest -->
     </classes>

@@ -21,36 +21,28 @@ public class ValidateTextInGoogle extends Base {
     public static Logger log =LogManager.getLogger(Base.class.getName());
 	@BeforeTest
 
-	public void tearUp() throws IOException {
+	public void initialize() throws IOException {
 		driver = initializeDriver();
 		driver.get(prop.getProperty("google"));
 		driver.manage().window().maximize();
 	}
 	
-	@Test
+	@Test // Validating if i would get the expected text result by searching in google
 	
 	public void GoogleSearchResults() throws IOException
 	{
 		
 		GooglePage g = new GooglePage(driver);
-		String pageLanguage = (g.getLanguageButton().getText());
+		g.changeLanguage();
+        g.getSearchLabel().sendKeys(g.name);
+        g.getSearchButton().click();
+        GoogleSearchPage gsp = new GoogleSearchPage(driver);
+        Assert.assertEquals(gsp.getSearchResults(), gsp.textForValidation);
 		
-		if(pageLanguage.equals("English")) 
-		{
-            g.getLanguageButton().click();
-		} 
-			g.getSearchLabel().sendKeys("Zlatko");
-		    g.getSearchButton().click();
-		    GoogleSearchPage gsp = new GoogleSearchPage(driver);
-		    String searchResults = gsp.textResult().getText();
-		    Assert.assertEquals(searchResults, "Zlatko is a South Slavic masculine given name. The name is derived from the word zlato meaning gold with hypocoristic suffix -ko common in South Slavic ...");
-		
-	    
-	    
 		    log.info("Google search result test successfully passed!");
 	}
 	@AfterTest
-	public void tearDown()
+	public void quitDriver()
 	{
 		driver.quit();
 		

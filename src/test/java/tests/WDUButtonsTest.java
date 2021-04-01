@@ -1,23 +1,15 @@
 package tests;
 
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.safari.SafariDriver.WindowType;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import junit.framework.Assert;
 import pageObjects.WDUButtonClicksPage;
-import pageObjects.WDUContactUsPage;
 import pageObjects.WDUFrontPage;
 import resources.Base;
 
@@ -29,32 +21,27 @@ public class WDUButtonsTest extends Base {
 	
 	@BeforeTest
 
-	public void tearUp() throws IOException {
+	public void initialize() throws IOException {
 		driver = initializeDriver();
 		driver.get(prop.getProperty("webdriveruniversity"));
 		driver.manage().window().maximize();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1) // Clicking the first button 
 	public void validateButtonOne() throws InterruptedException 
 	{
 		WDUFrontPage wdufp = new WDUFrontPage(driver);
 		WDUButtonClicksPage wdubcp = new WDUButtonClicksPage(driver);
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		jse.executeScript("window.scrollBy(0,500)");
+	    wdubcp.scrollPage();
 		wdufp.getButtonClickSection().click();
-		Thread.sleep(3000);
-		Set<String> windows = driver.getWindowHandles();
-        Iterator<String> it = windows.iterator();
-        String parentId = it.next();
-        String childId = it.next();
-        driver.switchTo().window(childId);
+		driver.switchTo().window(getChildWindow());
+		wdubcp.getWebDriverWaitButton();
 		wdubcp.getButtonOne().click();
 		wdubcp.getCloseButton().click();
 		
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2) // Clicking the second button with JavaScript click method 
 	
 	public void validateButtonTwoUsingJavascriptExecutor()
 	{
@@ -64,7 +51,7 @@ public class WDUButtonsTest extends Base {
 		wdubcp.getCloseButton().click();
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3) // Clicking the third button with using Action Move & Click
 	
 	public void validateButtonThreeUsingMouseAndKeyboard()
 	{
@@ -74,7 +61,7 @@ public class WDUButtonsTest extends Base {
 	}
 	
 	@AfterTest
-	public void tearDown()
+	public void quitDriver()
 	{
 		driver.quit();
 	}

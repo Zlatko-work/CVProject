@@ -20,4 +20,13 @@ public class GoogleSearchPage {
 	 {
 		 return driver.findElement(textResult);
 	 }
+	 
+	 //Method to get search result
+	 public String getSearchResults()
+	 {
+		 String searchResults = textResult().getText();
+		 return searchResults;
+	 }
+	 
+	 public String textForValidation = "Zlatko is a South Slavic masculine given name. The name is derived from the word zlato meaning gold with hypocoristic suffix -ko common in South Slavic ...";
 }

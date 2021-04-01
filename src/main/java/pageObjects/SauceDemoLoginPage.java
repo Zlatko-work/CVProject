@@ -31,4 +31,11 @@ public class SauceDemoLoginPage {
 	{
 		return driver.findElement(loginButton);
 	}
+	
+	// Method to get the expected url 
+	public String getExpectedUrl()
+	{
+		String expectedUrl = driver.getCurrentUrl();
+		return expectedUrl;
+	}
 }

@@ -32,4 +32,23 @@ public class GooglePage {
 	{
 		return driver.findElement(languageButton);
 	}
+	
+	// Method to get the page language
+	
+	public String getPageLanguage()
+	{
+		String pageLanguage = (getLanguageButton().getText());
+		return pageLanguage;
+	}
+	
+	// Method to change language if its not english
+	
+	public void changeLanguage()
+	{
+		if(getPageLanguage().equals("English")) 
+		{
+           getLanguageButton().click();
+		} 
+	}
+	public String name = "Zlatko";
 }

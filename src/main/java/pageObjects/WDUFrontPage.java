@@ -18,6 +18,7 @@ public class WDUFrontPage {
 	By autocompleteSection = By.xpath("//a[@id='autocomplete-textfield']");
 	By fileUploadSection = By.xpath("//a[@id='file-upload']");
 	By datePickerSection = By.xpath("//a[@id='datepicker']");
+	By navTitle = By.id("nav-title");
 	
 	public WDUFrontPage (WebDriver driver)
     {
@@ -73,5 +74,10 @@ public class WDUFrontPage {
 	public WebElement getDatePickerSection()
 	{
 		return driver.findElement(datePickerSection);
+	}
+	
+	public WebElement getNavTitle()
+	{
+		return driver.findElement(navTitle);
 	}
 }

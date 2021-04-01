@@ -1,32 +1,16 @@
 package tests;
 
-import java.util.List;
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.safari.SafariDriver.WindowType;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
-import pageObjects.WDUButtonClicksPage;
-import pageObjects.WDUContactUsPage;
 import pageObjects.WDUDropdownPage;
 import pageObjects.WDUFrontPage;
-import pageObjects.WDUToDoListPage;
 import resources.Base;
 
 
@@ -38,26 +22,20 @@ public class WDUDropdownsTest extends Base {
 
 	@BeforeTest
 
-	public void tearUp() throws IOException {
+	public void initialize() throws IOException {
 		driver = initializeDriver();
 		driver.get(prop.getProperty("webdriveruniversity"));
 		driver.manage().window().maximize();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1) // Validating dropdown that works properly
 	public void validateDropdown() throws InterruptedException
 	{
 		WDUFrontPage wdufp = new WDUFrontPage(driver);
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		jse.executeScript("window.scrollBy(0,1600)");
+		WDUDropdownPage ddp = new WDUDropdownPage(driver);
+		ddp.scrollPage();
 		wdufp.getDropdownsSection().click();
-		Thread.sleep(3000);
-		Set<String> windows = driver.getWindowHandles();
-        Iterator<String> it = windows.iterator();
-        String parentId = it.next();
-        String childId = it.next();
-        driver.switchTo().window(childId);
-        WDUDropdownPage ddp = new WDUDropdownPage(driver);
+		driver.switchTo().window(getChildWindow());
         Select dropdownOne = new Select(ddp.getStaticDropdownOne());
         Select dropdownTwo = new Select(ddp.getStaticDropdownTwo());
         Select dropdownThree = new Select(ddp.getStaticDropdownThree());
@@ -71,7 +49,7 @@ public class WDUDropdownsTest extends Base {
         Assert.assertEquals("HTML", dropdownThreeSelectedItem);
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2) // Validating checkboxes that works properly
 	public void validateCheckboxes()
 	{
 		WDUDropdownPage ddp = new WDUDropdownPage(driver);
@@ -86,7 +64,7 @@ public class WDUDropdownsTest extends Base {
 		
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3) // Validating radio buttons that works properly
 	
 	public void validateRadioButtons()
 	{
@@ -103,7 +81,7 @@ public class WDUDropdownsTest extends Base {
 		Assert.assertTrue(ddp.getRadioButtonYellow().isSelected());
 	}
 	
-	@Test(priority=4)
+	@Test(priority=4) // Validating that button is disabled
 	public void validateDisabledButton()
 	{
 		WDUDropdownPage ddp = new WDUDropdownPage(driver);
@@ -112,7 +90,7 @@ public class WDUDropdownsTest extends Base {
 	}
 	
 	@AfterTest
-	public void tearDown()
+	public void quitDriver()
 	{
 		driver.quit();
 	}

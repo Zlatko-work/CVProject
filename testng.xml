@@ -9,51 +9,61 @@
       <class name="tests.WDUToDoListTest"/>
       </classes>
       </test>
+      
       <test name="Testing login">
       <classes>
       <class name="tests.LoginTest"/>
       </classes>
       </test>
+      
+      <test name="Testing Autocomplete section">
+      <classes>
+      <class name="tests.WDUAutoCompleteTest"/>
+      </classes>
+      </test>
+      
       <test name="Testing contact us session">
       <classes>
       <class name="tests.WDUContactUsTest"/>
       </classes>
       </test>
+      
       <test name="Testing dropdowns">
       <classes>
       <class name="tests.WDUDropdownsTest"/>
       </classes>
       </test>
+      
       <test name="Testing file upload">
       <classes>
       <class name="tests.WDUFileUploadTest"/>
       </classes>
       </test>
-      <test name="Testing autocomplete session">
-      <classes>
-      <class name="tests.WDUAutocompleteTest"/>
-      </classes>
-      </test>
+      
       <test name="Validating text in google">
       <classes>
       <class name="tests.ValidateTextInGoogle"/>
       </classes>
       </test>
+      
       <test name="Testing IFrame">
       <classes>
       <class name="tests.WDUIframeTest"/>
       </classes>
       </test>
+      
       <test name="Testing actions">
       <classes>
       <class name="tests.WDUActionsTest"/>
       </classes>
       </test>
+      
       <test name="Testing buttons">
       <classes>
       <class name="tests.WDUButtonsTest"/>
       </classes>
       </test>
+      
       <test name="Testing dates">
       <classes>
       <class name="tests.WDUDatePickerTest"/>

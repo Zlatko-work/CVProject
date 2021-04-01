@@ -3,8 +3,12 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class WDUContactUsPage {
+import resources.Base;
+
+public class WDUContactUsPage extends Base {
 
 	public WebDriver driver;
 	
@@ -61,4 +65,70 @@ public class WDUContactUsPage {
 	{
 		return driver.findElement(invalidEmailText);
 	}
+	
+	
+	// Explicit waits
+	
+	public void getWebDriverWaitContactUs()
+	{
+		WebDriverWait w = new WebDriverWait(driver, 5);
+		w.until(ExpectedConditions.visibilityOfElementLocated(firstName));
+		w.until(ExpectedConditions.elementToBeClickable(firstName));
+		w.until(ExpectedConditions.elementToBeClickable(lastName));
+		w.until(ExpectedConditions.elementToBeClickable(email));
+		w.until(ExpectedConditions.elementToBeClickable(resetButton));
+		w.until(ExpectedConditions.elementToBeClickable(submitButton));
+	}
+	
+	public void getWebDriverWaitContactUsResetButton()
+	{
+		WebDriverWait w = new WebDriverWait(driver, 5);
+		w.until(ExpectedConditions.textToBePresentInElementValue(By.name("first_name"), ""));
+	}
+	
+	// Method to get validation text
+	
+	public String getFinalText()
+	{
+	   String finalText = getValidationText().getText();
+	   return finalText;
+	}
+	
+	// Method to get invalid text
+	
+	public String getInvalidText()
+	{
+		String invalidEmailText = getInvalidEmailText().getText();
+		return invalidEmailText;
+	}
+	
+	// Method to send valid credentials
+	public void sendValidCredentials()
+	{
+		getWebDriverWaitContactUs();
+		getFirstName().sendKeys("Zlatko");
+		getLastName().sendKeys("Cvetkoski");
+		getEmail().sendKeys("Zlatko@gmail.com");
+	}
+	
+	// Method to send valid credentials with comments plus
+	public void sendValidCredentialsWithComment()
+	{
+		getFirstName().sendKeys("Zlatko");
+		getLastName().sendKeys("Cvetkoski");
+		getEmail().sendKeys("Zlatko@gmail.com");
+		getComments().sendKeys("I would like to ask a question");	
+	}
+	
+	// Method to send invalid credentials
+	public void sendInvalidCredentials() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		getFirstName().sendKeys("Zlatko");
+		getLastName().sendKeys("Cvetkoski");
+		getEmail().sendKeys("Zlatko");
+		getComments().sendKeys("I would like to ask a question");
+	}
+	
+	
 }

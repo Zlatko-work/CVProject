@@ -23,14 +23,14 @@ public class Listeners extends Base implements ITestListener {
 		
 		WebDriver driver=null;
 		try {
-			driver=(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+			driver=(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());  // Getting the access to all the informations
 		} catch(Exception e)
 		{
 			
 		}
-		String testMethodName = result.getMethod().getMethodName();
+		String testMethodName = result.getMethod().getMethodName();    // Saving the name of the file into a string 
 		try {
-			getScreenShotPath(testMethodName,driver);
+			getScreenShotPath(testMethodName,driver);                 // Method that we get from the Base class
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
